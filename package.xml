@@ -35,9 +35,9 @@
         <email>pollita@php.net</email>
         <active>no</active>
     </lead>
-    <date>2019-09-17</date>
+    <date>2019-10-02</date>
     <version>
-        <release>1.2</release>
+        <release>1.2.1</release>
         <api>1.0</api>
     </version>
     <stability>
@@ -46,14 +46,9 @@
     </stability>
     <license uri="http://www.php.net/license">PHP License</license>
     <notes>
-        - Fix multiple reflection/documentation disparities [PR #29] (Michael Moravec)
-        - Fix PHP7 port. Restored commented reference counting. [Dmitry Stogov]
-        - Updates for php_url structure changes [Daniel Ciochiu]
-        - Make the PR generic for all PHP7 versions [Jan Ehrhardt]
-        - Fix compatibility with PHP 7.3 [Jan Ehrhardt]
-        - Fix config.w32 for compatibility with OpenSSL 1.1.x [Anatol]
-        - Make static inline for php_ssh2_sftp_attr2ssb [Andy Postnikov]
-        - Enable 7.1-7.3 on Travis CI [Andy Postnikov]
+        - Fixed debug and disconnected calback crashes
+        - Fixed crash after resource is disconnected
+        - Fixed crash on php shutdown
     </notes>
     <contents>
         <dir name="/">
@@ -96,6 +91,23 @@
         <configureoption name="with-ssh2" default="autodetect" prompt="libssh2 prefix?"/>
     </extsrcrelease>
     <changelog>
+        <release>
+            <date>2019-09-17</date>
+            <version>
+                <release>1.2</release>
+                <api>1.0</api>
+            </version>
+            <notes>
+                - Fix multiple reflection/documentation disparities [PR #29] (Michael Moravec)
+                - Fix PHP7 port. Restored commented reference counting. [Dmitry Stogov]
+                - Updates for php_url structure changes [Daniel Ciochiu]
+                - Make the PR generic for all PHP7 versions [Jan Ehrhardt]
+                - Fix compatibility with PHP 7.3 [Jan Ehrhardt]
+                - Fix config.w32 for compatibility with OpenSSL 1.1.x [Anatol]
+                - Make static inline for php_ssh2_sftp_attr2ssb [Andy Postnikov]
+                - Enable 7.1-7.3 on Travis CI [Andy Postnikov]
+            </notes>
+        </release>
         <release>
             <date>2017-06-14</date>
             <version>
